@@ -10,9 +10,9 @@ public class Staff {
     private String name;
     private String surname;
     private String birthdate;
-    private String[] telephoneNumbers;
-    private String[] emails;
-    private String[] adresses;
+    private String[] telephoneNumbers = { };
+    private String[] emails = { };
+    private String[] adresses = { };
 
     public int getId() {
         return id;
@@ -69,6 +69,7 @@ public class Staff {
     public void setAdresses(String[] adresses) {
         this.adresses = adresses;
     }
+
 
     Staff(int id, String name, String surname, String birthdate, String telephoneNumber, String email, String adress){
         this.id = id;
